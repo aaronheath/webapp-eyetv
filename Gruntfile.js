@@ -112,7 +112,8 @@ module.exports = function (grunt) {
         src: [
           'bower_components/handlebars/handlebars.min.js',
           'bower_components/ember/ember.min.js',
-          'bower_components/ember/ember-data.min.js'
+          'bower_components/ember/ember-data.min.js',
+          'ember/*.js'
         ],
         dest: 'dist/js/ember-all.js'
       },

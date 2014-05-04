@@ -35,7 +35,7 @@
   "dependencies": {
     "jquery": ">= 1.9.0",
     "ember": "~1.5",
-    "ember-data": "~1.0.0-beta.4",
+    "ember-data": "~1.0.0",
     "html5shiv": "~3.7",
     "respond": "~1"
   }
