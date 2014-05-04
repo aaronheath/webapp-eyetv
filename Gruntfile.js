@@ -87,11 +87,12 @@ module.exports = function (grunt) {
 
     concat: {
       options: {
-        banner: '<%= banner %>\n<%= jqueryCheck %>',
-        stripBanners: false
+        //banner: '<%= banner %>\n<%= jqueryCheck %>',
+        //stripBanners: false
       },
       bootstrap: {
         src: [
+          'bower_components/jquery/dist/jquery.min.js',
           'js/transition.js',
           'js/alert.js',
           'js/button.js',
@@ -106,6 +107,21 @@ module.exports = function (grunt) {
           'js/affix.js'
         ],
         dest: 'dist/js/<%= pkg.name %>.js'
+      },
+      ember: {
+        src: [
+          'bower_components/handlebars/handlebars.min.js',
+          'bower_components/ember/ember.min.js',
+          'bower_components/ember/ember-data.min.js'
+        ],
+        dest: 'dist/js/ember-all.js'
+      },
+      ie9: {
+        src: [
+          'bower_components/html5shiv/dist/html5shiv.min.js',
+          'bower_components/respond/dest/respond.min.js'
+        ],
+        dest: 'dist/js/ie9.js'
       }
     },
 
